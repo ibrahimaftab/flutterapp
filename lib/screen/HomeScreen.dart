@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/component/home/HomeCategories.dart';
 import 'package:flutterapp/component/home/HomeSearch.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -19,8 +20,9 @@ class HomeScreen extends StatelessWidget {
       body: Container(
         padding: const EdgeInsets.only(left: 15, right: 15, bottom: 15),
         child: Column(
-          children: [
+          children: const <Widget>[
             HomeSearch(),
+            HomeCategories(),
           ],
         ),
       ),
